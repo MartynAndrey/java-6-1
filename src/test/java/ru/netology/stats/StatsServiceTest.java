@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class StatsServiceTest {
 
     @Test
-    void shoudSumSales() {
+    void shouldSumSales() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 180;
@@ -18,7 +18,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shoudAverageSale() {
+    void shouldAverageSale() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 15;
@@ -29,7 +29,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shoudMaximumSaleMonthIndex() {
+    void shouldMaximumSaleMonthIndex() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 8;
@@ -40,7 +40,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shoudMinimumSaleMonthIndex() {
+    void shouldMinimumSaleMonthIndex() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 9;
@@ -51,7 +51,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shoudCountMonthBelowAverageSale() {
+    void shouldCountMonthBelowAverageSale() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 5;
@@ -62,7 +62,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shoudCountMonthAboveAverageSale() {
+    void shouldCountMonthAboveAverageSale() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService stats = new StatsService();
         long expected = 5;
